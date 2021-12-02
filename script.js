@@ -17,7 +17,7 @@ const guessedNumbers = [];
 setTimeout(function() {
     guessNumbers.forEach((number) => {
         let userTry = parseInt(prompt('Inserisci un numero che ha detto Simon!'));
-        if ( guessNumbers.includes(userTry)) {
+        if ( guessNumbers.includes(userTry) && !guessedNumbers.includes(userTry) ) {
             guessedNumbers.push(userTry);
         } else {
             wrongNumbers.push(userTry);
